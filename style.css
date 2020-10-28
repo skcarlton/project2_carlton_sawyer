@@ -1,0 +1,893 @@
+@font-face {
+  font-family: "sawyers hand";
+  src: url("./fonts/sawyershandwriting.ttf")format("truetype")
+}
+
+@font-face {
+  font-family: "nimbus-sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+/******************************** HAMBURGER MENU STYLES *************************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:23%;
+  right:12%;
+  /* line-height:45px; */
+  padding:0px 15px;
+  color:#2b4e60;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:23%;
+  right:12%;
+  padding:0px 15px;
+  color:#2b4e60;
+  border:0;
+  font-size:3em;
+  /* line-height:65px; */
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu {
+	z-index:1000000;
+	font-weight:bold;
+	font-size:0.8em;
+	width:50%;
+	background:#57a2d2;
+	position:absolute;
+	top: 74px;
+  right: 15px;
+	text-align:center;
+	font-size:12px;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: block;
+	padding:2px 0 15px 0;
+	border-bottom:#2b4e60 1px solid;
+}
+
+.menu li:hover {
+	display: block;
+	background:#f7f3e3;
+	padding:2px 0 15px 0;
+	border-bottom:#2b4e60 1px solid;
+}
+
+.menu ul li a {
+	text-decoration:none;
+	margin: 0px;
+	color:#2b4e60;
+}
+
+.menu ul li a:hover {
+	color: #2b4e60;
+	text-decoration:none;
+}
+
+/******************************** HAMBURGER MENU STYLES *************************************/
+
+/**********
+
+Nav Bar
+
+**********/
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  background: #57a2d2;
+  color: #2b4e60;
+  padding: 15px 15px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index:2;
+  text-align: center;
+  display: flex;
+  font-family: "sawyers hand";
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2b4e60;
+  padding: 0 50px;
+  transition: .5s;
+  position: relative;
+  top: 7px;
+}
+
+nav a:hover {
+  color: #f6c36a;
+  padding: 0 50px;
+  transition: .5s;
+  position: relative;
+  top: 7px;
+}
+
+.logo {
+  max-height: 40px;
+  padding: 0 40px;
+}
+
+/**********
+
+End of Nav Bar
+
+**********/
+
+body {
+  background-color: #f7f3e3;
+}
+
+main {
+  font-family: "nimbus-sans";
+  color: #2b4e60;
+  text-align: center;
+}
+
+h1, h2, h3, h5 {
+  font-family: "sawyers hand";
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  word-spacing: .25em;
+  color: #2b4e60;
+  padding: 0 2%
+}
+
+h4 {
+  font-family: "sawyers hand";
+  font-size: .7rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  word-spacing: .25em;
+  color: #2b4e60;
+}
+
+p {
+  font-family: "nimbus-sans";
+  margin: 4.5%;
+  color: #2b4e60;
+  font-size: .9rem;
+}
+
+/**********
+
+Hero Image
+
+**********/
+
+
+.hero-image-section {
+  background-image: url('./images/usvi2.jpg');
+  background-attachment: fixed;
+  padding: 100% 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+
+/**********
+
+About Me
+
+**********/
+
+
+.about-me {
+  padding: 20% 0 12% 0;
+  display: inline-block;
+}
+
+.about-img {
+  float:left;
+  padding: 0 10% 5% 10%;
+  width: 80%;
+}
+
+.about-text {
+  padding: 0 2%;
+}
+
+.about-text h1 {
+  font-size: 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 1rem;
+}
+
+.about-me a {
+  background: #f6c36a;
+  color: #2b4e60;
+  text-decoration: none;
+  padding: 3.5% 5%;
+  font-family: "sawyers hand";
+  text-transform: uppercase;
+  margin-top: 3%;
+  transition: .5s;
+  display: block;
+}
+
+.about-me a:hover {
+  color: #f6c36a;
+  background: #57a2d2;
+  padding: 3.5% 5%;
+  transition: .5s;
+}
+
+
+/**********
+
+Section Break 1
+
+**********/
+
+
+.section-break-1 {
+  background-image: url('./images/uluru.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100% 0;
+  width: 100%;
+}
+
+
+/**********
+
+Education
+
+**********/
+
+.education {
+  padding-top: 20%;
+}
+
+.grad-patch {
+  animation: spin 20s infinite linear;
+  width: 70%;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/**********
+
+Experiences
+
+**********/
+
+
+.experiences {
+  padding: 20% 7%;
+  text-align: center;
+}
+
+.company-grid p {
+  padding-top: 3%;
+}
+
+.company-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.company-grid img{
+  width: 75%;
+  padding: 7%;
+}
+
+.company-grid div{
+  background-color: #f6c36a;
+  padding: 3%;
+  margin: 5% 4%;
+  overflow: hidden;
+}
+
+.company-grid a{
+  text-decoration: none;
+}
+
+
+/**********
+
+Section Break 2
+
+**********/
+
+
+.section-break-2 {
+  background-image: url('./images/bateman-shot.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  padding: 100% 0;
+  width: 100%;
+}
+
+
+/**********
+
+Work
+
+**********/
+
+
+.work {
+  padding-top: 20%;
+}
+
+.company-work {
+  background: #f6c36a;
+  padding: 15% 0;
+  margin: 20% 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.co-text {
+  width: 80%;
+  border: solid 2pt;
+  margin: 10% auto;
+}
+
+.date {
+  font-style: italic;
+}
+
+.project {
+  margin: 5% 0 2% 0;
+  display: inline-block;
+}
+
+.project a img {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(100%);
+  transition: .5s;
+}
+
+.project a img:hover {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(80%);
+  transition: .5s;
+}
+
+.project-gd {
+  margin: 5% 0 2% 0;
+  display: inline-block;
+}
+
+.project-gd a img {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(100%);
+  transition: .5s;
+}
+
+.project-gd a img:hover {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(80%);
+  transition: .5s;
+}
+
+.project-asl {
+  margin: 5% 0 2% 0;
+  display: inline-block;
+}
+
+.project-asl a img {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(100%);
+  transition: .5s;
+}
+
+.project-asl a img:hover {
+  width: 80%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(80%);
+  transition: .5s;
+}
+
+figcaption {
+  font-size: .75rem;
+  font-style: italic;
+  padding: 2% 1%;
+}
+
+.big-project a img {
+  width: 95%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(100%);
+  transition: .5s;
+}
+
+.big-project a img:hover {
+  width: 95%;
+  margin: auto;
+  background: #f7f3e3;
+  filter: opacity(80%);
+  transition: .5s;
+}
+
+video {
+  margin-top: 2%;
+  width: 70%;
+}
+
+.work-link a {
+  background: #2b4e60;
+  color: #f6c36a;
+  text-decoration: none;
+  padding: 2%;
+  font-family: "sawyers hand";
+  text-transform: uppercase;
+  transition: .5s;
+  display: block;
+  margin: auto;
+  word-spacing: .25em;
+}
+
+.work-link a:hover {
+  color: #f6c36a;
+  background: #57a2d2;
+  padding: 2%;
+  transition: .5s;
+  margin: auto;
+  word-spacing: .25em;
+}
+
+/**********
+
+Contact
+
+**********/
+
+
+.contact-form {
+  background: #f6c36a;
+  padding: 4%;
+  color: #2b4e60;
+  font-family: "sawyers hand";
+  text-transform: uppercase;
+  margin: 4% auto;
+  text-align: center;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+.reset input,
+.submit input {
+  background: #2b4e60;
+  color: #f6c36a;
+  padding: 2% 5%;
+  font-family: "sawyers hand";
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.reset input:hover,
+.submit input:hover {
+  background: #57a2d2;
+  transition: .5s;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+textarea {
+  font-family: sans-serif;
+  padding: 10px 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+/**********
+
+Footer
+
+**********/
+
+footer {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+/********************* START OF MAX-WIDTH 400PX MEDIA QUERY *******************/
+
+@media (max-width: 400px) {
+  .about-img {
+    width: 80%;
+    float: none;
+  }
+}
+
+/********************* END OF MAX-WIDTH 400PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 400PX MEDIA QUERY *******************/
+
+@media (min-width: 400px) {
+  .about-img {
+    width: 65%;
+    float: none;
+  }
+
+  .hero-image-section, .section-break-1, .section-break-2 {
+    padding: 83% 0;
+  }
+
+  .about-me {
+    padding: 12% 0;
+  }
+
+  .about-me a{
+    padding: 3%;
+    margin: 1%;
+    display: inline;
+  }
+
+  .about-me a:hover {
+    padding: 3%;
+    margin: 1%;
+  }
+
+  .education {
+    padding-top: 12%;
+  }
+
+  .grad-patch {
+    width: 60%;
+  }
+
+  .experiences {
+    padding: 12% 7%;
+  }
+
+  .work {
+    padding-top: 12%;
+  }
+
+  .company-work {
+    margin: 12% 0;
+  }
+
+  .work-link a {
+    width: 80%
+  }
+
+  .project a img, .project a img:hover,.project-gd a img, .project-gd a img:hover, .project-asl a img, .project-asl a img:hover {
+    width: 65%;
+  }
+}
+
+/********************* END OF MIN-WIDTH 400PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 475PX MEDIA QUERY *******************/
+
+@media (min-width: 475px) {
+
+  .company-grid div{
+    width: 32%;
+  }
+
+  .grid-element-11 a {
+    width: 100%;
+  }
+
+  .grid-element-11 h3 {
+    margin-left: -9%;
+  }
+}
+
+/********************* START OF MIN-WIDTH 500PX MEDIA QUERY *******************/
+
+@media (min-width: 500px) {
+  .hero-image-section, .section-break-1, .section-break-2 {
+    padding: 65% 0;
+  }
+
+  .about-img {
+    width: 50%;
+    float: left;
+    padding: 0 3% 5% 5%;
+  }
+
+  .grad-patch {
+    width: 50%;
+  }
+
+  .project-asl a img {
+    width: 58%;
+  }
+
+  .project-asl a img:hover {
+    width: 58%;
+  }
+
+  video {
+    width: 50%;
+  }
+}
+
+/********************* END OF MIN-WIDTH 500PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 650PX MEDIA QUERY *******************/
+
+@media (min-width: 650px){
+
+  .about-img {
+    width: 40%;
+    float: left;
+  }
+
+  .hero-image-section, .section-break-1, .section-break-2 {
+    padding: 50% 0;
+  }
+
+  .grad-patch {
+    width: 40%;
+  }
+
+  .work {
+    padding-top: 10%;
+  }
+
+  .project-asl a img {
+    width: 40%;
+  }
+
+  .project-asl a img:hover {
+    width: 40%;
+  }
+
+  video {
+    width: 30%;
+  }
+
+  .company-work {
+    padding: 8% 0;
+    margin: 8% 0;
+  }
+
+}
+
+/********************* END OF MIN-WIDTH 650PX MEDIA QUERY *******************/
+
+/********************* START OF MIN-WIDTH 700PX MEDIA QUERY *******************/
+
+@media (min-width: 700px){
+  .project-gd {
+    margin: 0 -6%;
+    width: 50%;
+  }
+
+  .project-gd a img, .project-gd a img:hover {
+    width: 70%;
+  }
+
+  .project a img, .project a img:hover {
+    width: 60%;
+  }
+
+  .big-project a img, .big-project a img:hover {
+    width: 75%;
+  }
+
+  .co-text{
+    margin: 7% auto;
+  }
+}
+
+/********************* END OF MIN-WIDTH 700PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 800PX MEDIA QUERY *******************/
+
+@media (min-width:800px) {
+  .grad-patch{
+    width: 30%;
+  }
+
+  .about-me a{
+    padding: 1% 2%;
+  }
+
+  .about-me a:hover {
+    padding: 1% 2%;
+  }
+
+  .about-img {
+    width: 30%;
+  }
+
+  .company-grid div {
+    width: 21%;
+    margin: 2%;
+  }
+
+  .project a img, .project a img:hover {
+    width: 50%;
+  }
+
+  .reset input, .submit input{
+    padding: 1% 2%;
+  }
+
+}
+
+/********************* END OF MIN-WIDTH 800PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 1050PX MEDIA QUERY *******************/
+
+@media (min-width:1050px) {
+  .desktop-menu {
+  	display: inline;
+    padding-top: .5%;
+  }
+
+  .hamburger, .cross, .menu {
+    display: none;
+  }
+
+  .grad-patch {
+    width: 25%
+  }
+
+  .hero-image-section, .section-break-1, .section-break-2 {
+    padding: 30% 0;
+  }
+
+  .education, .work {
+    padding-top: 7%;
+  }
+
+  .about-me {
+    padding: 7% 0;
+  }
+
+  .experiences {
+    padding: 7% 3%;
+  }
+
+  p{
+    margin: 2%;
+  }
+
+.company-grid div{
+    /* display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; */
+    width: 15%;
+    margin: 2%;
+    padding: 3%;
+  }
+
+  .project-asl a img, .project-asl a img:hover {
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  video {
+    width: 20%;
+  }
+
+  .co-text {
+    margin: 5% auto;
+  }
+
+  .company-work{
+    padding: 5% 0;
+  }
+
+  .big-project a img, .big-project a img:hover {
+    width: 60%;
+  }
+
+  .contact-form{
+    margin: 2% 0;
+  }
+
+  footer{
+    padding-bottom: 0;
+  }
+}
+
+/********************* END OF MIN-WIDTH 1050PX MEDIA QUERY *******************/
+
+
+/********************* START OF MIN-WIDTH 1200PX MEDIA QUERY *******************/
+
+@media (min-width:1200px) {
+  .grad-patch{
+    width: 20%;
+  }
+
+  .about-img {
+    width: 25%;
+  }
+
+  .work-link a, .work-link a:hover {
+    padding: 1%;
+  }
+
+  .project-gd a img, .project-gd a img:hover {
+    width: 60%;
+  }
+}
+
+/********************* END OF MIN-WIDTH 1200PX MEDIA QUERY *******************/
